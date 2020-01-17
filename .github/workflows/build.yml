@@ -1,0 +1,24 @@
+name: build
+on: [push]
+jobs:
+  build:
+    name: Build
+    container: 
+      image: golang:1.13
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: password
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=5
+    steps:
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v1
+    - name: Build
+      run: go build -v .
+    - name: Test
+      run: TEST_DB_HOST=mysql go test -race -coverprofile=coverage.txt -covermode=atomic
+    - uses: codecov/codecov-action@v1
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }} #required

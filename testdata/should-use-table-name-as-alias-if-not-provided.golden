@@ -1,0 +1,29 @@
+{
+	"Authors": null,
+	"Exercise": {
+		"ExerciseID": 0,
+		"SectionID": 0,
+		"Ordering": 0,
+		"Title": "",
+		"CreatedAt": null
+	},
+	"Isbn": null,
+	"Textbooks": [
+		{
+			"TextbookID": 1,
+			"AuthorID": {
+				"Int64": 0,
+				"Valid": false
+			},
+			"Name": "t1",
+			"CreatedAt": "2019-01-01T00:00:00Z",
+			"AuthorVal": {
+				"AuthorID": 0,
+				"Name": ""
+			},
+			"AuthorPtr": null,
+			"Isbns": null,
+			"Sections": null
+		}
+	]
+}

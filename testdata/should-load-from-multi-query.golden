@@ -1,0 +1,138 @@
+{
+	"Authors": [
+		{
+			"AuthorID": 1,
+			"Name": "a1"
+		}
+	],
+	"Exercise": {
+		"ExerciseID": 1,
+		"SectionID": 1,
+		"Ordering": 1,
+		"Title": "t1-s1-e1",
+		"CreatedAt": "2019-04-01T00:00:00Z"
+	},
+	"Isbn": {
+		"IsbnID": 1,
+		"TextbookID": {
+			"Int64": 1,
+			"Valid": true
+		},
+		"Isbn": "i1"
+	},
+	"Textbooks": [
+		{
+			"TextbookID": 1,
+			"AuthorID": {
+				"Int64": 0,
+				"Valid": false
+			},
+			"Name": "t1",
+			"CreatedAt": "2019-01-01T00:00:00Z",
+			"AuthorVal": {
+				"AuthorID": 0,
+				"Name": ""
+			},
+			"AuthorPtr": null,
+			"Isbns": [
+				{
+					"IsbnID": 1,
+					"TextbookID": {
+						"Int64": 1,
+						"Valid": true
+					},
+					"Isbn": "i1"
+				},
+				{
+					"IsbnID": 2,
+					"TextbookID": {
+						"Int64": 1,
+						"Valid": true
+					},
+					"Isbn": "i2"
+				}
+			],
+			"Sections": [
+				{
+					"SectionID": 1,
+					"TextbookID": 1,
+					"Title": "t1-s1",
+					"CreatedAt": "2019-02-01T00:00:00Z",
+					"Exercises": [
+						{
+							"ExerciseID": 1,
+							"SectionID": 1,
+							"Ordering": 1,
+							"Title": "t1-s1-e1",
+							"CreatedAt": "2019-04-01T00:00:00Z"
+						},
+						{
+							"ExerciseID": 2,
+							"SectionID": 1,
+							"Ordering": 2,
+							"Title": "t1-s1-e2",
+							"CreatedAt": "2019-04-01T00:00:00Z"
+						}
+					]
+				},
+				{
+					"SectionID": 2,
+					"TextbookID": 1,
+					"Title": "t1-s2",
+					"CreatedAt": "2019-03-01T00:00:00Z",
+					"Exercises": null
+				},
+				{
+					"SectionID": 3,
+					"TextbookID": 1,
+					"Title": "t1-s3",
+					"CreatedAt": "2019-03-01T00:00:00Z",
+					"Exercises": [
+						{
+							"ExerciseID": 3,
+							"SectionID": 3,
+							"Ordering": 1,
+							"Title": "t1-s3-e1",
+							"CreatedAt": "2019-04-01T00:00:00Z"
+						},
+						{
+							"ExerciseID": 4,
+							"SectionID": 3,
+							"Ordering": 2,
+							"Title": "t1-s3-e2",
+							"CreatedAt": "2019-04-01T00:00:00Z"
+						}
+					]
+				}
+			]
+		},
+		{
+			"TextbookID": 2,
+			"AuthorID": {
+				"Int64": 1,
+				"Valid": true
+			},
+			"Name": "t2",
+			"CreatedAt": "2018-01-01T00:00:00Z",
+			"AuthorVal": {
+				"AuthorID": 1,
+				"Name": "a1"
+			},
+			"AuthorPtr": {
+				"AuthorID": 1,
+				"Name": "a1"
+			},
+			"Isbns": [
+				{
+					"IsbnID": 3,
+					"TextbookID": {
+						"Int64": 2,
+						"Valid": true
+					},
+					"Isbn": "i3"
+				}
+			],
+			"Sections": null
+		}
+	]
+}
