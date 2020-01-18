@@ -2,7 +2,7 @@ name: build
 on: [push, pull_request]
 jobs:
   build:
-    name: Build
+    name: build
     container: 
       image: golang:1.13
     runs-on: ubuntu-latest
