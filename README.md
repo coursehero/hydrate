@@ -1,7 +1,7 @@
 # Hydrate
 
-[![codecov](https://codecov.io/gh/coursehero/hydrate/branch/master/graph/badge.svg)](https://codecov.io/gh/coursehero/hydrate)
 [![Actions Status](https://github.com/coursehero/hydrate/workflows/build/badge.svg)](https://github.com/coursehero/hydrate/actions)
+[![codecov](https://codecov.io/gh/coursehero/hydrate/branch/master/graph/badge.svg)](https://codecov.io/gh/coursehero/hydrate)
 
 Hydrate is a package designed to work with [jinzhu/gorm](https://github.com/jinzhu/gorm) to provide an alternative to
 Preload to load hierarchies efficiently. 
